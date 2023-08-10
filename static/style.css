@@ -1,0 +1,863 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.portfolio-cont {
+    width: 100%;
+    height: 110vh;
+    background: url(../images/back.jpg)no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+header {
+    height: 100px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header .head-name a {
+    text-decoration: overline;
+    border-bottom: 3px solid black;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.4px;
+
+}
+
+header .head-name .code{
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 22px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    position: relative;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+  nav ul li a:hover{
+    color: orangered;
+    transition: 0.5s;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  nav ul li a:hover::after {
+    color: orangered;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .download-cv{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 1%;
+  }
+  .download-cv .cv{
+    border: 2px solid red;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 20px;
+    border-radius: 50px;
+  }
+
+  .download-cv .cv:hover{
+    background-color: red;
+    transition: 0.8s;
+    color: white;
+  }
+
+.about-pic-cont {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-about, .profile-pic {
+    width: 50%;
+    padding: 10px 30px 0px 30px;
+}
+
+.profile-pic img{
+    width: 100%;
+    height: 345px;
+    object-fit: cover;
+    border-radius: 30%;
+
+}
+
+.name-text,
+.about-para {
+    margin-top: 8px;
+}
+
+.about-para {
+    line-height: 1.4;
+    color: rgb(64, 61, 61);
+}
+
+.text-1 {
+    font-size: 20px;
+}
+
+.name-text {
+    font-size: 50px;
+}
+
+.name-text>.im-color {
+    color: red;
+}
+
+.name-text #design-name{
+    color: rgb(20, 156, 229);
+    font-size: 30px;
+
+}
+
+#caret {
+    font-size: 2.5rem;
+    color: rgb(20, 156, 229);
+    animation: caret-blink 0.9s infinite;
+    padding: 0;
+   
+}
+
+@keyframes caret-blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.button-and-other-links{
+    margin: 0%;
+}
+
+.button-and-other-links a{
+ text-decoration: none;
+ perspective: 1000;
+ transform: rotateY(180deg);
+
+}
+.button-and-other-links a:hover .fa{
+    transform: rotateY(180deg);
+   
+   }
+.button-and-other-links a .fa{
+    padding-left: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+   }
+
+   .button-and-other-links a .fa-instagram{
+    color: red;
+   }
+
+   .button-and-other-links a .fa:hover{
+    rotate: 180deg;
+    transform-style: flat;
+   }
+
+.button-and-other-links button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-and-other-links button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: red;
+}
+
+.button-and-other-links button:hover a{
+    color: black;
+    transition: 0.8s;
+}
+
+.button-and-other-links button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.8s;
+}
+
+/* Section Two */
+.about-my-work{
+    background-color: #1a1a1a;
+   
+}
+.about{
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+#service{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.container{
+    padding: 0 15px;
+    margin: auto;
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row h2{
+    text-align: center;
+    color: white;
+}
+.container .row-2{
+    padding-top: 30px;
+}
+.media .media-heading{
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.media-body, .media-left{
+    display: table-cell;
+    vertical-align: top;
+}
+.row .media-body p{
+    font-size: 14px;
+    color: rgb(149, 147, 147);
+}
+.container .media .media-object .fa {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #D43F52;
+    font-size: 24px;
+    margin-right: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.4s ease-in;
+}
+.container .media .fa:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* Section Three */
+.about-me{
+    background-color: black;
+    padding-bottom: 100px;
+}
+
+.about-me .about-text h2{
+    color: white;
+    text-align: start;
+    padding-bottom: 5px;
+}
+.about-me .about-text .title{
+    color: rgb(234, 22, 22);
+    font-size: 20px;
+    padding: 10px 0 0px 0;
+}
+
+.about-me .about-text .para{
+    color: rgb(126, 122, 122);
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.my-skill{
+    padding-top: 20px;
+}
+
+.my-skill span{
+    display: block;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.my-skill small{
+    float: right;
+}
+
+.progress{
+    height: 4px;
+    margin-bottom: 15px;
+}
+
+/* Section Four Portfolio Project */
+
+.port-section{
+    padding: 50px 0 30px 0;
+    background-color: whitesmoke;
+}
+
+.container .title-gallery{
+    text-align: center;
+    background-color: whitesmoke;
+    color: red;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 0;
+
+}
+
+.port-title{
+    background-color: #1a1a1a;
+
+}
+
+.container-fluid{
+    margin-top: 20px;
+    background-color: whitesmoke;
+
+}
+
+.container-fluid .row .img{
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px 0px rgb(55, 54, 54);
+    margin: 10px 0;
+    padding: 10px;
+}
+.container-fluid .row .img:hover{
+    box-shadow: 0 0 3px 1px rgba(0, 140, 186);
+    transition: 1s;
+}
+
+.container-fluid .row .img h5{
+    margin: 8px 0 0 5px;
+}
+
+.container-fluid .row .img p{
+    margin-left: 5px;
+}
+
+.container-fluid .img img{
+    width: 100%;
+    height: 180px;
+
+}
+
+.container-fluid .img img:hover{
+    padding: 7px;
+    border: 1px solid blue;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    cursor: pointer;
+}
+
+/* Section Five Contact Me */
+.contact-me{
+    background-color: #1a1a1a;
+}
+
+.contact-me address > p{
+    margin-bottom: 10px;
+    color: rgb(126, 122, 122);
+
+}
+
+.contact-me .contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #ffffff;
+}
+
+.contact-me .fa {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #D43F52;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 20px;
+    transition: all 0.4s ease-in;
+}
+.contact-me .fa:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+
+form{
+    margin-top: 20px;
+}
+
+form input{
+    height: 50px;
+}
+
+.contact-me .form-control {
+    background: transparent;
+    border: 2px solid #999;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.contact-me input[type="submit"] {
+    background: #D43F52;
+    border: 2px solid transparent;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+/* MY Map */
+.google-maps .row{
+    background-color: #1a1a1a;
+    margin-bottom: 15px;
+}
+/* Certification Section */
+.certification{
+    background-color: black;
+    padding: 60px 0 100px 0;
+}
+
+.certification .certificate-title{
+    padding-bottom: 20px;
+}
+.certification .certificate-title .certi-title{
+    color: rgb(211, 46, 46);
+
+}
+.certification img{
+    height: 350px;
+    object-fit: contain;
+}
+/* Footer */
+footer{
+    background-color: #1a1a1a;
+    padding-top: 70px;
+    padding-bottom: 10px;
+
+}
+footer .foot{
+    text-align: center;
+    color: #999;
+}
+.foot a{
+    text-decoration: none;
+    color: red;
+}
+
+hr{
+    width: 15%;
+    padding: 1.5px 0;
+    border-radius: 10px;
+    margin: auto;
+    background-color:aqua;
+
+}
+footer .icons{
+    text-align: center;
+    margin: 0%;
+    padding: 5px 0 0 0;
+}
+footer .icons a{
+    padding-left: 10px;
+}
+.icons a .fa-instagram{
+    color: red;
+   }
+
+/* Media Queries for first Container */
+@media only screen and (max-width: 900px){
+    nav ul li {
+        padding: 0 10px;
+    }
+    
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .download-cv{
+        margin-top: 2%;
+        padding-top: 40px;
+      }
+}
+@media only screen and (max-width: 700px){
+    .portfolio-cont {
+        width: 100%;
+        height: 190vh;
+        background: url(../images/back.jpg)no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    header{
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+   
+    }
+
+    header .head-name a {
+        border-bottom: 3px solid red;
+        color: black;
+        font-size: 20px;
+    
+    }
+    
+    header .head-name .code{
+        color: red;
+    }
+
+    nav ul li {
+        padding: 0 10px;
+    }
+    
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .about-pic-cont {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .profile-about, .profile-pic {
+        width: 100%;
+        padding: 10px 30px 0px 30px;
+    }
+
+    .profile-pic{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .profile-about{
+        padding: 50px 30px 0 30px;
+    }
+
+    .download-cv{
+        margin-top: 3%;
+        padding-top: 40px;
+      }
+
+      .profile-pic img{
+        height: 430px;
+    }
+
+    .text-1 {
+        font-size: 20px;
+    }
+    
+    .name-text {
+        font-size: 40px;
+    }
+
+    .about-para {
+       text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .portfolio-cont {
+        height: 180vh;
+    
+    }
+    header {
+        height: 70px;
+    }
+    
+    header .head-name a {
+        border-bottom: 3px solid black;
+        color: red;
+        font-size: 16px;
+    
+    }
+    
+    header .head-name .code{
+        color: red;
+    }
+    
+    nav ul li {
+        list-style: none;
+        padding: 0 7px;
+    }
+
+    nav ul li a{
+        font-size: 12px;
+    }
+
+    .profile-pic img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20%;
+      
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    
+    .container-fluid .row .img h5{
+        font-size: 16px;
+    }
+    
+    .container-fluid .row .img p{
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    
+    .container-fluid .img img{
+        width: 100%;
+        height: 200px;
+    
+    }
+   
+    .col-xs-7{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .portfolio-cont {
+        width: 100%;
+        height: 170vh;
+    }
+
+    header {
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 0 5px;
+    }
+
+    nav ul li a{
+        font-size: 10px;
+    }
+
+    .profile-pic img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20%;
+      
+    }
+
+    .download-cv{
+        margin-top: 8%;
+        padding-top: 40px;
+      }
+
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .container-fluid .row .img h5{
+        font-size: 16px;
+    }
+    
+    .container-fluid .row .img p{
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    
+    .container-fluid .img img{
+        width: 100%;
+        height: 200px;
+    
+    }
+   
+    .col-xs-7{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 768px) {
+    .col-md-3{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 700px){
+    .portfolio-cont {
+        width: 100%;
+        height: 190vh;
+        background: url(../images/back.jpg)no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    header{
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+   
+    }
+
+   nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    font-size: 15px;
+}
+
+    .about-pic-cont {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .profile-about, .profile-pic {
+        width: 90%;
+        padding: 10px 30px 0px 30px;
+    }
+
+    .profile-pic{
+        width: 80%;
+        margin-left: 40%;
+
+    }
+    
+    .profile-about{
+        padding: 20px 0 0 30px;
+    }
+
+    .download-cv{
+        margin-top: 2%;
+        padding-top: 40px;
+      }
+
+      .profile-pic img{
+        height: 430px;
+    }
+
+
+    .about-para {
+       text-align: justify;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1150px){
+    .profile-about {
+        padding: 10px 0px 0px 20px;
+
+    }
+    .profile-pic img{
+        height: 390px;
+    }
+    .profile-pic {
+        padding: 20px;
+    }
+} 
+
+
+@media only screen and (max-width: 1300px) and (min-width: 1200px){
+    .profile-about {
+        padding: 50px 0px 0 30px;
+    }
+    .profile-pic img{
+        height: 440px;
+    }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1300px){
+    .profile-about {
+        padding: 80px 0px 0 40px;
+    }
+    .profile-pic img{
+        height: 470px;
+    }
+}
+
+
+@media only screen and (max-width: 1700px) and (min-width: 1440px){
+    .profile-about {
+        width: 50%;
+        padding: 80px 0px 0 60px;
+    }
+
+    .about-para {
+        line-height: 1.5;
+        font-size: 20px;
+    }
+    .profile-pic {
+        padding: 30px;
+    }
+    .profile-pic img{
+        height: 550px;
+    }
+}
